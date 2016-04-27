@@ -1,0 +1,2 @@
+# beamfarmingmode
+beam farming mode
