@@ -9,11 +9,11 @@ setTimeout(function() {
 		$('.be-navbar__dashboardbutton .be-button').click();
 		$('head').append('<link rel="stylesheet" href="https://mitchdev.github.io/beamfarmingmode/main.css">');
 		$('.text-center').append('<br><br><br><a style="font-size: 25px;" onclick="exitfarmingmode();">Exit Farming Mode</a>');
+		$('.farmingmode').on('click', function() {
+			//location.href = 'https://beam.pro/'+username;
+			parent.history.back();
+			$('.exitfarmingmode').remove();
+			$('.farmingmodecss').remove();
+		});
 	});
-	function exitfarmingmode() {
-		//location.href = 'https://beam.pro/'+username;
-		parent.history.back();
-		$('.exitfarmingmode').remove();
-		$('.farmingmodecss').remove();
-	}
 }, 4000);
