@@ -7,7 +7,7 @@ setTimeout(function() {
 		$('head').append('<link rel="stylesheet" href="https://mitchdev.github.io/beamfarmingmode/main.css">');
 		$('.text-center').append('<span class="exitfarmingmode">Exit Farming Mode</span>');
 	});
-	$('exitfarmingmode).on('click', function () {
+	$('exitfarmingmode).on('click', function() {
 		parent.history.back();
 		$('.exitfarmingmode').remove();
 		$('.farmingmodecss').remove();
