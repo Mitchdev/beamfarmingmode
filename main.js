@@ -8,8 +8,8 @@ setTimeout(function() {
 	$('.farmingmode').on('click', function() {
 		$('.be-navbar__dashboardbutton .be-button').click();
 		$('head').append('<link rel="stylesheet" href="https://mitchdev.github.io/beamfarmingmode/main.css">');
-		$('.text-center').append('<br><br><br><a style="font-size: 25px;" onclick="exitfarmingmode();">Exit Farming Mode</a>');
-		$('.farmingmode').on('click', function() {
+		$('.text-center').append('<br><br><br><a style="font-size: 25px;" class="exitfarmingmode">Exit Farming Mode</a>');
+		$('.exitfarmingmode').on('click', function() {
 			//location.href = 'https://beam.pro/'+username;
 			parent.history.back();
 			$('.exitfarmingmode').remove();
