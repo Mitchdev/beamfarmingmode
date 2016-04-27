@@ -1,8 +1,8 @@
 console.log('waiting for beam to load.');
 setTimeout(function() {
-	var username;
+	//var username;
 	console.log('farming mode is now running.');
-	username = $('.be-user-name').text;
+	//username = $('.be-user-name').text;
 	$('.a-d-3').append('<a style="display: none;" class="farmingmode be-button be-channel-page__nav__menuitem md-ink-ripple">Farming Mode<div class="md-ripple-container"></div></a>');
 	$('.farmingmode').fadeToggle('slow');
 	$('.farmingmode').on('click', function() {
@@ -11,7 +11,8 @@ setTimeout(function() {
 		$('.text-center').append('<br><br><br><a style="font-size: 25px;" onclick="exitfarmingmode();">Exit Farming Mode</a>');
 	});
 	function exitfarmingmode() {
-		location.href = 'https://beam.pro/'+username;
+		//location.href = 'https://beam.pro/'+username;
+		parent.history.back();
 		$('.exitfarmingmode').remove();
 		$('.farmingmodecss').remove();
 	}
