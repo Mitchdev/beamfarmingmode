@@ -8,7 +8,7 @@ setTimeout(function() {
 	$('.farmingmode').on('click', function() {
 		$('.be-navbar__dashboardbutton .be-button').click();
 		$('head').append('<link rel="stylesheet" href="https://mitchdev.github.io/beamfarmingmode/main.css">');
-		$('.text-center').append('<br><br><br><a style="display: none;font-size: 25px;" onclick="exitfarmingmode();">Exit Farming Mode</a>');
+		$('.text-center').append('<br><br><br><a style="font-size: 25px;" onclick="exitfarmingmode();">Exit Farming Mode</a>');
 	});
 	function exitfarmingmode() {
 		location.href = 'https://beam.pro/'+username;
