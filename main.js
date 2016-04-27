@@ -12,4 +12,4 @@ setTimeout(function() {
 		$('.exitfarmingmode').remove();
 		$('.farmingmodecss').remove();
 	});
-}, 4500);
+}, 2500);
