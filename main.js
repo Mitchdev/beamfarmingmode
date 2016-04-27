@@ -11,7 +11,7 @@ setTimeout(function() {
 		$('.text-center').append('<br><br><br><a style="display: none;font-size: 25px;" onclick="exitfarmingmode();">Exit Farming Mode</a>');
 	});
 	function exitfarmingmode() {
-		location.herf = 'https://beam.pro/'+username;
+		location.href = 'https://beam.pro/'+username;
 		$('.exitfarmingmode').remove();
 		$('.farmingmodecss').remove();
 	}
