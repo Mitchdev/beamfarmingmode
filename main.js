@@ -13,4 +13,4 @@ setTimeout(function() {
 		$('.exitfarmingmode').remove();
 		$('.farmingmodecss').remove();
 	});
-}, 500);
+}, 4000);
