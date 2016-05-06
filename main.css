@@ -1,31 +1,28 @@
-.dashboard-v2 {
-    top: -1px !important;
-    left: -1px !important;
-    right: -10px !important;
-    bottom: -1px !important;
-    background-color: rgba(42,47,70,1) !important;
-}
-.be-navbar__section {
-	margin-right: 40px;
-    margin-top: 50px;
-}
-.be-user-level--framed {
-    margin-top: 50px;
-}
-.be-user-level--framed div[ng-include] {
-	margin-top: 0px !important;   
-}
-.dashboard-v2 div:not(.layout-column) {
-	margin-top: 50px;
-}
-md-tooltip.md-show,
-.be-navbar__logo,
+.be-hub__content,
 .a-d-5,
 .a-d-4,
-.layout-column,
-.dashboard-v2 .stacked-menu ul,
-.be-navbar__section--border,
-.md-button:not([disabled]):not(.md-disabled),
-#xchat-button {
-    display: none;
+.layout-align-center-center,
+.be-hub__header,
+.be-hub__activator,
+.a-d-3 div:not(.ng-scope):not(.exitbfm) {
+	display: none !important;
+}
+.be-hub__views {
+    width: 100vw !important;
+    right: 0 !important;
+}
+@media only screen and (max-width: 949px) {
+    .be-hub__views {
+        right: 330px !important;
+	}
+}
+.b-flex--alignment-between-center:not(.a-d-3) {
+    margin-top: 15vw !important;
+}
+.be-hub__views {
+    background-color: rgba(42,47,70,1) !important;
+}
+.exitbfm button:hover,
+.farmingmode button:hover {
+    background-color: #536dfe !important;
 }
