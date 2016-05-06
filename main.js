@@ -10,6 +10,7 @@ setTimeout(function() {
 	});
 	$('body').on('click', '.exitbfm', function() {
 		parent.history.back();
+		$('.be-hub').removeClass('be-hub--active');
 		$('.exitfm').remove();
 		$('.farmingmodecss').remove();
 	});
