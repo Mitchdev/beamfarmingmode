@@ -6,13 +6,9 @@ setTimeout(function() {
 		$('.be-channel-page__btns').append('<div class="farmingmode be-u-m--l1 ng-scope"><button class="md-small md-no-spacing md-button md-ink-ripple"><span>Farming Mode</span></button></div>');
 	}
 	$('.farmingmode').on('click', function() {
+		$('.be-hub__activator .md-ink-ripple').click();
 	//	$('head').append('<link rel="stylesheet" href="https://rawgit.com/Mitchdev/beamfarmingmode/master/main.css">');
 	//	$('.text-center').append('<span onclick="exitfarmingmode();">Exit Farming Mode</span>');
-	});
-	$('.be-u-m--b3').on('click', function() {
-		setTimeout(function() {
-			append();	
-		}, 3000);
 	});
 	//function exitfarmingmode() {
 	//	parent.history.back();
