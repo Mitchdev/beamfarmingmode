@@ -9,6 +9,11 @@ setTimeout(function() {
 	//	$('head').append('<link rel="stylesheet" href="https://rawgit.com/Mitchdev/beamfarmingmode/master/main.css">');
 	//	$('.text-center').append('<span onclick="exitfarmingmode();">Exit Farming Mode</span>');
 	});
+	$('.be-u-m--b3').on('click', function() {
+		setTimeout(function() {
+			append();	
+		}, 3000);
+	});
 	//function exitfarmingmode() {
 	//	parent.history.back();
 	//	$('.exitfarmingmode').remove();
