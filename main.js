@@ -1,11 +1,17 @@
 console.log('waiting for beam to load.');
 setTimeout(function() {
 	console.log('farming mode is now running.');
-	$('.be-channel-page__btns').append('<div class="farmingmode be-u-m--l1 ng-scope"><button class="md-small md-no-spacing md-button md-ink-ripple"><span>Farming Mode</span></button></div>');
+	append();
+	function append() {
+		$('.be-channel-page__btns').append('<div class="farmingmode be-u-m--l1 ng-scope"><button class="md-small md-no-spacing md-button md-ink-ripple"><span>Farming Mode</span></button></div>');
+	}
 	$('.farmingmode').on('click', function() {
 		window.location = "https://beam.pro/me/overview"
 	//	$('head').append('<link rel="stylesheet" href="https://rawgit.com/Mitchdev/beamfarmingmode/master/main.css">');
 	//	$('.text-center').append('<span onclick="exitfarmingmode();">Exit Farming Mode</span>');
+	});
+	$('.be-u-m--b3').on('click', function() {
+		append();	
 	});
 	//function exitfarmingmode() {
 	//	parent.history.back();
