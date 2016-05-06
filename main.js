@@ -8,7 +8,7 @@ setTimeout(function() {
 		//$('head').append('<link rel="stylesheet" href="https://rawgit.com/Mitchdev/beamfarmingmode/master/main.css">');
 		$('.a-d-3').prepend('<div class="exitbfm"><button class="md-raised btn-fixed-size-medium md-button md-ink-ripple" type="button"><span class="ng-scope">Exit Farming Mode</span></button></div>');
 	});
-	$('.exitbfm').on('click', function() {
+	$('body').on('click', '.exitbfm', function() {
 		parent.history.back();
 		$('.exitfm').remove();
 		//$('.farmingmodecss').remove();
