@@ -13,7 +13,7 @@ setTimeout(function() {
 	});
 	function exitfarmingmode() {
 		parent.history.back();
-		$('.exitfarmingmode').remove();
-		$('.farmingmodecss').remove();
+		$('.exitbfm').remove();
+		//$('.farmingmodecss').remove();
 	}
 }, 6000);
