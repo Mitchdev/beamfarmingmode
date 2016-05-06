@@ -1,7 +1,7 @@
 console.log('waiting for beam to load.');
 setTimeout(function() {
 	console.log('farming mode is now running.');
-	$('.be-channel-page__btns').append('<div class="farmingmode be-u-m--l1 ng-scope"><button class="md-small md-no-spacing md-button md-ink-ripple"><span>Farming Mode</span></button></div>');
+	$('.be-channel-page__btns').append('<div class="farmingmode be-u-m--l1 ng-scope"><button style="background-color: rgba(255,255,255,0.3) !important;" class="md-raised md-small md-primary md-button ng-scope md-ink-ripple"><span>Farming Mode</span></button></div>');
 	$('.farmingmode').on('click', function() {
 		$('.be-hub').addClass('be-hub--active');
 		$('.be-hub__menu').find('.be-u-m--t1').children().first().find('.md-ink-ripple').click();
