@@ -7,7 +7,7 @@ setTimeout(function() {
 	}
 	$('.farmingmode').on('click', function() {
 		$('.be-hub').addClass('be-hub--active');
-		$('.be-hub__section').children().first().find('.md-ink-ripple').click();
+		$('.be-hub__section').children().first().click();
 	//	$('head').append('<link rel="stylesheet" href="https://rawgit.com/Mitchdev/beamfarmingmode/master/main.css">');
 	//	$('.text-center').append('<span onclick="exitfarmingmode();">Exit Farming Mode</span>');
 	});
