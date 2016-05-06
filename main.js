@@ -9,7 +9,7 @@ setTimeout(function() {
 		$('.be-hub').addClass('be-hub--active');
 		$('.be-hub__menu').find('.be-u-m--t1').children().first().find('.md-ink-ripple').click();
 	//	$('head').append('<link rel="stylesheet" href="https://rawgit.com/Mitchdev/beamfarmingmode/master/main.css">');
-		$('.a-d-3').prepend('<div class="exitbfm" onclick="exitfarmingmode();"><button class="md-raised btn-fixed-size-medium md-button md-ink-ripple" type="button"><span class="ng-scope">Exit Farming Mode</span></button></div>');
+		$('.a-d-3').prepend('<div class="exitbfm" onclick="exitfarmingmode()"><button class="md-raised btn-fixed-size-medium md-button md-ink-ripple" type="button"><span class="ng-scope">Exit Farming Mode</span></button></div>');
 	});
 	function exitfarmingmode() {
 		parent.history.back();
