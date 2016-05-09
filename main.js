@@ -20,7 +20,8 @@ setTimeout(function() {
 		var progress = $('.be-hub__section--points .be-hub__section__item').find('.flex-2 md-progress-linear').attr('value');
 		if (sparks) {
 			$('.bfm-sparks').remove();
-			$('.text-center.be-u-m--t4.a.fadeInLeft.a-d-2').append('<div class="bfm-sparks be-user-bar be-u-m--b1"><div class="be-user-bar__inner" style="width: '+progress+'%;margin-top: 50px;background: #fff;box-shadow: 0 0 3px rgba(255, 255, 255, 0);"></div></div><small class="ng-binding ng-scope"><span class="ng-binding">'+amount+'<span class="icon-spark"></span></span> in '+second+'s</small>');
+			$('.bfm-sparks-small').remove();
+			$('.text-center.be-u-m--t4.a.fadeInLeft.a-d-2').append('<div class="bfm-sparks be-user-bar be-u-m--b1"><div class="be-user-bar__inner" style="width: '+progress+'%;margin-top: 50px;background: #fff;box-shadow: 0 0 3px rgba(255, 255, 255, 0);"></div></div><small class="bfm-sparks-small ng-binding ng-scope"><span class="ng-binding">'+amount+'<span class="icon-spark"></span></span> in '+second+'s</small>');
 		}
 	}, 1000);
 	$('body').on('click', '.t-d-4 .layout-wrap b-browse-card md-card', function() {
@@ -33,6 +34,7 @@ setTimeout(function() {
 		parent.history.back();
 		$('.be-hub').removeClass('be-hub--active');
 		$('.exitfm').remove();
+		$('.bfm-sparks-small').remove();
 		$('.bfm-sparks').remove();
 		$('.farmingmodecss').remove();
 	});
