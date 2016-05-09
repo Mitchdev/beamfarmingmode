@@ -19,9 +19,10 @@ setTimeout(function() {
 		var second = $('.be-hub__section--points .be-hub__section__item').find('.flex-2 small').text().slice(-6, -1);
 		var progress = $('.be-hub__section--points .be-hub__section__item').find('.flex-2 .md-white').attr('aria-valuenow');
 		var amount = $('.be-hub__section--points .be-hub__section__item').find('div:not(.flex-2) span.ng-binding').text();
+		var sparks = $('.be-hub__section--points .be-hub__section__item').find('.flex-2 small span.ng-binding').text();
 		if (sparks) {
 			$('.bfm-sparks div').css('width', progress+'%');
-			$('.bfm-sparks-small').html('4 <span class="icon-spark"></span> '+second+'s');
+			$('.bfm-sparks-small').html(sparks+' <span class="icon-spark"></span> '+second+'s');
 			$('.be-user-sparks.be-user-sparks__progress.a.fadeInLeft.a-d-1 b').text(amount);
 		}
 	}, 1000);
