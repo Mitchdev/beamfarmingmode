@@ -12,7 +12,7 @@ setTimeout(function() {
 		$('.be-hub__menu').find('.be-u-m--t1').children().first().find('.md-ink-ripple').click();
 		$('head').append('<link class="farmingmodecss" rel="stylesheet" href="https://mitchdev.github.io/beamfarmingmode/main.css">');
 		$('.dash-content').find('.a-d-3').prepend('<div class="exitbfm"><button style="background-color: rgba(255,255,255,0.3)" class="btn-fixed-size-medium md-button md-ink-ripple" type="button"><span class="ng-scope">Exit Farming Mode</span></button></div>');
-		$('.text-center.be-u-m--t4.a.fadeInLeft.a-d-2').append('<div class="bfm-sparks be-user-bar be-u-m--b1"><div class="be-user-bar__inner" style="width: 0%;margin-top: 50px;background: #fff;box-shadow: 0 0 3px rgba(255, 255, 255, 0);"></div></div><small class="bfm-sparks-small ng-scope">4 <span class="icon-spark"></span> in 0s</small>');
+		$('.text-center.be-u-m--t4.a.fadeInLeft.a-d-2').append('<div class="bfm-sparks be-user-bar be-u-m--b1"><div class="be-user-bar__inner" style="width: 0%;margin-top: 50px;background: #fff;box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);"></div></div><small class="bfm-sparks-small ng-scope">4 <span class="icon-spark"></span> in 0s</small>');
 		sparks = true;
 	});
 	setInterval(function() {
