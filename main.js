@@ -12,6 +12,7 @@ setTimeout(function() {
 		$('.be-hub__menu').find('.be-u-m--t1').children().first().find('.md-ink-ripple').click();
 		$('head').append('<link class="farmingmodecss" rel="stylesheet" href="https://mitchdev.github.io/beamfarmingmode/main.css">');
 		$('.dash-content').find('.a-d-3').prepend('<div class="exitbfm"><button style="background-color: rgba(255,255,255,0.3)" class="btn-fixed-size-medium md-button md-ink-ripple" type="button"><span class="ng-scope">Exit Farming Mode</span></button></div>');
+		$('.text-center.be-u-m--t4.a.fadeInLeft.a-d-2').append('<div class="bfm-sparks be-user-bar be-u-m--b1"><div class="be-user-bar__inner" style="width: 0%;margin-top: 50px;background: #fff;box-shadow: 0 0 3px rgba(255, 255, 255, 0);"></div></div><small class="bfm-sparks-small ng-binding ng-scope"><span class="ng-binding">0<span class="icon-spark"></span></span> in 0s</small>');
 		sparks = true;
 	});
 	setInterval(function() {
@@ -19,9 +20,9 @@ setTimeout(function() {
 		var second = $('.be-hub__section--points .be-hub__section__item').find('.flex-2 small').text();
 		var progress = $('.be-hub__section--points .be-hub__section__item').find('.flex-2 md-progress-linear').attr('value');
 		if (sparks) {
-			$('.bfm-sparks').remove();
-			$('.bfm-sparks-small').remove();
-			$('.text-center.be-u-m--t4.a.fadeInLeft.a-d-2').append('<div class="bfm-sparks be-user-bar be-u-m--b1"><div class="be-user-bar__inner" style="width: '+progress+'%;margin-top: 50px;background: #fff;box-shadow: 0 0 3px rgba(255, 255, 255, 0);"></div></div><small class="bfm-sparks-small ng-binding ng-scope"><span class="ng-binding">'+amount+'<span class="icon-spark"></span></span> in '+second+'s</small>');
+			$('.bfm-sparks').css('width', progress+'%');
+			$('.bfm-sparks-small').text(second);
+			$('.bfm-sparks-small span').text(amount);
 		}
 	}, 1000);
 	$('body').on('click', '.t-d-4 .layout-wrap b-browse-card md-card', function() {
