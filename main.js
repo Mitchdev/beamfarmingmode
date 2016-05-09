@@ -17,7 +17,7 @@ setTimeout(function() {
 	});
 	setInterval(function() {
 		var second = $('.be-hub__section--points .be-hub__section__item').find('.flex-2 small').text().slice(-7, -1);
-		var progress = $('.be-hub__section--points .be-hub__section__item').find('.flex-2 md-progress-linear').attr('aria-valuenow');
+		var progress = $('.be-hub__section--points .be-hub__section__item').find('.flex-2 .md-white').attr('aria-valuenow');
 		console.log(progress);
 		if (sparks) {
 			$('.bfm-sparks div').css('width', progress+'%');
