@@ -21,8 +21,7 @@ setTimeout(function() {
 		var progress = $('.be-hub__section--points .be-hub__section__item').find('.flex-2 md-progress-linear').attr('value');
 		if (sparks) {
 			$('.bfm-sparks div').css('width', progress+'%');
-			$('.bfm-sparks-small').text(second);
-			$('.bfm-sparks-small span').text(amount);
+			$('.bfm-sparks-small').html(amount+'<span class="icon-spark"></span>'+second);
 		}
 	}, 1000);
 	$('body').on('click', '.t-d-4 .layout-wrap b-browse-card md-card', function() {
