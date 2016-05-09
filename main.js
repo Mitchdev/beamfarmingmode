@@ -16,7 +16,7 @@ setTimeout(function() {
 		sparks = true;
 	});
 	setInterval(function() {
-		var second = $('.be-hub__section--points .be-hub__section__item').find('.flex-2 small').text().slice(0, -7);
+		var second = $('.be-hub__section--points .be-hub__section__item').find('.flex-2 small').text().slice(-0, -7);
 		console.log(second);
 		var progress = $('.be-hub__section--points .be-hub__section__item').find('.flex-2 md-progress-linear').attr('value');
 		if (sparks) {
