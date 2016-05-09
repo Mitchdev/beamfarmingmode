@@ -18,7 +18,8 @@ setTimeout(function() {
 	setInterval(function() {
 		var second = $('.be-hub__section--points .be-hub__section__item').find('.flex-2 small').text().slice(-7, -1);
 		var progress = $('.be-hub__section--points .be-hub__section__item').find('.flex-2 .md-white').attr('aria-valuenow');
-		console.log(progress);
+		var amount = $('.be-hub__section--points .be-hub__section__item').find('div:not(.flex-2) span.ng-binding').text();
+		console.log(amount);
 		if (sparks) {
 			$('.bfm-sparks div').css('width', progress+'%');
 			$('.bfm-sparks-small').html('4 <span class="icon-spark"></span>'+second+'s');
