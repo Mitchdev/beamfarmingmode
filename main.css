@@ -4,7 +4,8 @@
 .layout-align-center-center,
 .be-hub__header,
 .be-hub__activator,
-.a-d-3 div:not(.ng-scope):not(.exitbfm) {
+.a-d-3 div:not(.ng-scope):not(.exitbfm),
+.b-flex.b-flex--alignment-between-center.ng-scope {
 	display: none !important;
 }
 .be-hub__views {
