@@ -23,6 +23,7 @@ setTimeout(function() {
 		if (sparks) {
 			$('.bfm-sparks div').css('width', progress+'%');
 			$('.bfm-sparks-small').html('4 <span class="icon-spark"></span>'+second+'s');
+			$('.be-user-sparks.be-user-sparks__progress.a.fadeInLeft.a-d-1 b').text(amount);
 		}
 	}, 1000);
 	$('body').on('click', '.t-d-4 .layout-wrap b-browse-card md-card', function() {
