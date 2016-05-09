@@ -20,7 +20,7 @@ setTimeout(function() {
 		var second = $('.be-hub__section--points .be-hub__section__item').find('.flex-2 small').text();
 		var progress = $('.be-hub__section--points .be-hub__section__item').find('.flex-2 md-progress-linear').attr('value');
 		if (sparks) {
-			$('.bfm-sparks').css('width', progress+'%');
+			$('.bfm-sparks div').css('width', progress+'%');
 			$('.bfm-sparks-small').text(second);
 			$('.bfm-sparks-small span').text(amount);
 		}
