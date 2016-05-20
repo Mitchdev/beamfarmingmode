@@ -26,7 +26,7 @@ setTimeout(function() {
 			$('.be-user-sparks.be-user-sparks__progress.a.fadeInLeft.a-d-1 b').text(amount);
 		}
 	}, 1000);
-	$('body').on('click', '.t-d-4 .layout-wrap b-browse-card md-card', function() {
+	$('body').on('click', '.md-card', function() {
 		setTimeout(function() {
 			append();
 		}, 3000);
