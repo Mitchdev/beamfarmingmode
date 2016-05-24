@@ -7,7 +7,7 @@ setTimeout(function() {
 		$('.be-channel-page__btns').append('<div class="farmingmode be-u-m--l1 ng-scope"><button style="background-color: rgba(255,255,255,0.3)" class="md-small md-button ng-scope md-ink-ripple"><span>Farming Mode</span></button></div>');
 	}
 	append();
-	$('.farmingmode').on('click', function() {
+	$('body').on('click', '.farmingmode', function() {
 		$('.be-hub').addClass('be-hub--active');
 		$('.be-hub__menu').find('.be-u-m--t1').children().first().find('.md-ink-ripple').click();
 		$('head').append('<link class="farmingmodecss" rel="stylesheet" href="https://mitchdev.github.io/beamfarmingmode/main.css">');
